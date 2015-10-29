@@ -1,0 +1,66 @@
+
+<html>
+
+<HEAD>
+	<meta http-equiv=Content-Type content="text/html;  charset="utf-8">
+	<TITLE>Newton's Mountain</TITLE>	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="newtmtn.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+
+</HEAD>
+
+<BODY data-role="page" height=90% width=100%>
+	<header>
+	<div id="header" data-role="header">
+		<h1>
+			<a id="home" class="btn" href="http://galileoandeinstein.physics.virginia.edu/more_stuff/Applets/home.html" data-ajax ="false">
+				<span class="glyphicon glyphicon-home" aria-hidden="false"></span>
+			</a>
+	    	<b>Newton's Mountain</b>
+        </h1>
+    </div>
+    </header>
+
+	<div id = "main">
+		<div id="view">
+			<canvas id="canvas_one"> Display Error (check that javascript is enabled) </canvas>
+			<canvas id="canvas_two"> </canvas>
+			<canvas id="canvas_three"> </canvas>
+		</div>
+		<div id="div1">
+			<button id="startAnimation"> <span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+			<button id="stopAnimation"> <span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
+			<button data-inline="true" id="reset" type="button">
+				 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+			</button>
+			<button id="pathButton"> <span aria-hidden="true">Trace Path</span></button>
+		</div>
+		<div id="speed_div">
+			<label for="speed_slider"> <span id="splabel"> Initial Velocity:  m/s </span> </label>
+			<input type="range" name="speed_slider" id="speed_slider" value="3500" min="2000" max="11000" step = "50" data-popup-enabled="true">
+		</div>
+		<div id="data_div"> 
+			<label for="speed_slider"><span id="velspan"> Current Velocity: m/s </span> <span id="distspan"> Elevation: km </span> </label>
+		</div>
+		<div id="explanation" data-role="collapsible">
+        	<h3>Understanding Newton's Mountain</h3>
+			<p>Todo</p>
+    	</div>
+	</div>
+	</div>
+	<p align="left">&nbsp;</p>
+	<img hidden id="mtnimg" src="effects/newtmtn.jpg">
+	<audio hidden id="rock_hit" src="effects/Rock Hit.mp3">
+	<audio hidden id="cannon_fire" src="effects/Shell Fire.mp3">
+	<audio hidden id="scream_sound" src="effects/Wilhelm Scream.mp3">
+	<audio hidden id="escape_sound" src="effects/Leaving Earth.mp3">
+	<script src="newtmtn.js"></script>
+
+</BODY>
+</html>

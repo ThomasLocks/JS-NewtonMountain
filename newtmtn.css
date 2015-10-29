@@ -1,0 +1,116 @@
+/*Canvas positioning*/
+
+#main {
+}
+
+#view {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500;
+	height: 500;
+	background-color: white;
+}
+
+#home {
+	position: absolute;
+	left: -2px;
+	top: 3.5px;
+	bottom: 0px;
+}
+
+#canvas_one {
+	width: 500;
+	height: 500;
+	z-index: 1;
+	float: left;
+position: absolute;
+}
+#canvas_two {
+	width: 500;
+	height: 500;
+	z-index: 2;
+	float: left;
+position: absolute;
+}
+#canvas_three {
+	width: 500;
+	height: 500;
+	z-index: 3;
+	float: left;
+position: absolute;
+}
+
+#div1 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+#startAnimation {
+	float: left;
+	max-width: 245px;
+}
+
+
+#stopAnimation {
+	float: left;
+	max-width: 245px;
+}
+
+#reset {
+	float: left;
+	width: 75px;
+	margin-top:8px; 
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom: 0px;
+}
+#pathButton {
+	float: left;
+	width: 160px;
+	border: 99999; 
+	padding: 8.5; 
+	margin-top:8px; 
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom: 0px;
+}
+
+#speed_div {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+#splabel {
+	font-weight: bold;
+}
+
+#data_div {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+#velspan {
+	float: left;
+	width: 230px;
+	font-weight: bold;
+}
+
+#distspan {
+	float: left;
+	width: 230px;
+	font-weight: bold;
+}
+
+
+#explanation {
+	clear: both;
+	width: 500;
+	margin-top: 40;
+	margin-left: auto;
+	margin-right: auto;
+}
